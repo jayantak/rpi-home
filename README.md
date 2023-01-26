@@ -2,7 +2,8 @@
 
 To install run command:
 ```
-./install.sh
+wget -O - https://raw.githubusercontent.com/jayantak/rpi-home/main/01-ssh.sh | bash
+wget -O - https://raw.githubusercontent.com/jayantak/rpi-home/main/install.sh | bash
 ```
 
 Requirements:
