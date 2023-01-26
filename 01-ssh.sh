@@ -6,7 +6,7 @@ while getopts ":p:" o; do
     case "${o}" in
         p)
             p=${OPTARG}
-            ((p > 1023 || p < 65535)) || usage
+            ((p > 1023 && p < 65535)) || usage
             ;;
         *)
             usage
