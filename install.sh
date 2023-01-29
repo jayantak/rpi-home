@@ -5,7 +5,7 @@ echo 'export PATH="$HOME/.local/bin:$PATH"'
 echo "Installing Python virtual environments..."
 
 pip3 install virtualenv virtualenvwrapper
-if ! grep -q "#Virtualenvwrapper settings" ; then
+if ! grep -q "#Virtualenvwrapper settings" $HOME/.bashrc; then
     cat config/venvrc.j2 >> $HOME/.bashrc
     source $HOME/.bashrc
 fi
