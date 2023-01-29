@@ -1,0 +1,19 @@
+# Default values for all accounts
+defaults
+auth on
+tls on
+
+# Gmail
+account gmail
+host smtp.gmail.com
+from username@gmail.com
+
+port 587
+user username
+password **your password**
+
+# Syslog logging with facility LOG_MAIL instead of the default LOG_USER.
+syslog LOG_MAIL
+
+# Set a default account
+account default : gmail
