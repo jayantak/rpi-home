@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+echo 'export PATH="$HOME/.local/bin:$PATH"'
+
 echo "Installing Python virtual environments..."
 
 pip3 install virtualenv virtualenvwrapper
